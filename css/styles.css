@@ -40,6 +40,10 @@ body {
   color: #22c55e;
   text-transform: uppercase;
 }
+.logo-img {
+  width: 120px;
+  height: auto;
+}
 
 /* ================= NAV DESKTOP ================= */
 .nav {
