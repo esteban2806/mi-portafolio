@@ -11,20 +11,22 @@
 <body>
 
     <header class="header">
-        <div class="logo">Arnold Web</div>
+        <div class="logo">
+            <span class="logo-name">Arnold Web</span>
+            <span class="logo-role">Desarrollo Web</span>
+        </div>
 
-        <nav class="nav">
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+            ☰
+        </button>
 
-            <button class="menu-toggle" id="menuToggle">
-                ☰
-            </button>
+        <nav class="nav" id="navMenu">
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto" class="nav-cta">Contacto</a>
         </nav>
     </header>
+
 
 
     <section class="hero">
@@ -35,6 +37,9 @@
                 Contactame
             </a>
 
+        </div>
+        <div class="hero-image">
+            <img src="img/hero-web.png" alt="Desarrollo web profesional">
         </div>
     </section>
 
@@ -90,7 +95,7 @@
     <footer class="footer">
         <p>© 2025 Arnold – Desarrollo Web</p>
     </footer>
-    
+
     <script src="js/main.js"></script>
 </body>
 
