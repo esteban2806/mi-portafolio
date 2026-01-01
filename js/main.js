@@ -1,19 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.getElementById("menuToggle");
-  const navMenu = document.getElementById("navMenu");
+  const menuToggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav");
 
-  if (!menuToggle || !navMenu) {
-    console.error("No se encontró menuToggle o navMenu");
+  if (!menuToggle || !nav) {
+    console.error("No se encontró .menu-toggle o .nav");
     return;
   }
 
   menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
+    nav.classList.toggle("active");
   });
-})
-const menuToggle = document.querySelector(".menu-toggle");
-const nav = document.querySelector(".nav");
-
-menuToggle.addEventListener("click", () => {
-  nav.classList.toggle("active");
 });
